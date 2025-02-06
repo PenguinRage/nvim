@@ -8,3 +8,6 @@ Testing this markdown linter.
 - hadolint (Dockerfile)
 - flake8 (Python)
 - tflint (Terraform)
+
+# Fun times
+
