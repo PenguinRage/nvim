@@ -9,5 +9,5 @@ Testing this markdown linter.
 - flake8 (Python)
 - tflint (Terraform)
 
-# Fun times
+
 
