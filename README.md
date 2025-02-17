@@ -1,6 +1,4 @@
-# NVIM Files
-
-Testing this markdown linter.
+# Install list
 
 ## Linters required
 
@@ -9,3 +7,7 @@ Testing this markdown linter.
 - flake8 (Python)
 - tflint (Terraform)
 
+## LSPs
+
+- pyright
+- gopls
