@@ -15,6 +15,7 @@ return {
       keymaps = {
         ['<c-c>'] = false,
         ['q'] = 'actions.close',
+        ['g.'] = { 'actions.toggle_hidden', mode = 'n' },
       },
     },
     -- Optional dependencies
