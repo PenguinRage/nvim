@@ -949,6 +949,7 @@ require('lazy').setup({
   require 'kickstart.plugins.oil',
   require 'kickstart.plugins.hop',
   require 'kickstart.plugins.completions',
+  require 'kickstart.plugins.go',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -980,6 +981,17 @@ require('lazy').setup({
       lazy = '💤 ',
     },
   },
+})
+
+-- Run gofmt + goimports on save
+
+local format_sync_grp = vim.api.nvim_create_augroup('goimports', {})
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '*.go',
+  callback = function()
+    require('go.format').goimports()
+  end,
+  group = format_sync_grp,
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`
