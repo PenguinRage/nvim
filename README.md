@@ -11,3 +11,4 @@
 
 - pyright
 - gopls
+- terraform-ls
