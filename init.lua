@@ -967,6 +967,7 @@ require('lazy').setup({
   require 'kickstart.plugins.completions',
   require 'kickstart.plugins.go',
   require 'kickstart.plugins.harpoon',
+  require 'kickstart.plugins.auto-session',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -1044,7 +1045,7 @@ end, { desc = 'Open harpoon window' })
 
 vim.keymap.set('n', '<leader>a', function()
   harpoon:list():add()
-end, { desc = '[A]dd to Harpoon' })
+end, { desc = '📌[A]dd to Harpoon' })
 vim.keymap.set('n', '<C-e>', function()
   harpoon.ui:toggle_quick_menu(harpoon:list())
 end)
