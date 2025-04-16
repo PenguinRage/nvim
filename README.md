@@ -9,6 +9,7 @@
 
 ## LSPs
 
+- yamlls
 - pyright
 - gopls
 - terraform-ls
