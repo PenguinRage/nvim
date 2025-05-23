@@ -968,6 +968,7 @@ require('lazy').setup({
   require 'kickstart.plugins.go',
   require 'kickstart.plugins.harpoon',
   require 'kickstart.plugins.auto-session',
+  require 'kickstart.plugins.gemini',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -1090,7 +1091,7 @@ yamlls = {
       kubernetes = '*.yaml',
       ['http://json.schemastore.org/github-workflow'] = '.github/workflows/*',
       ['http://json.schemastore.org/github-action'] = '.github/action.{yml,yaml}',
-      ['http://json.schemastore.org/ansible-stable-2.9'] = 'roles/tasks/*.{yml,yaml}',
+      ['http://json.schemastore.org/ansible-stable-2.18'] = 'roles/tasks/*.{yml,yaml}',
       ['http://json.schemastore.org/prettierrc'] = '.prettierrc.{yml,yaml}',
       ['http://json.schemastore.org/kustomization'] = 'kustomization.{yml,yaml}',
       ['http://json.schemastore.org/ansible-playbook'] = '*play*.{yml,yaml}',
