@@ -1,5 +1,12 @@
 # Install list
 
+## Applications
+- kubectl
+- terraform
+- ansible
+- golang
+- Python 3.*
+
 ## Linters required
 
 - markdownlint (Markdown)
